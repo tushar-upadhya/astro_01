@@ -1,13 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Main from '../components/Main.astro';
-import H1 from '../components/H1.astro';
+import MainLayout from "../layouts/main-layout.astro"
+import Intro from "../components/Intro.astro"
+import Gallery from "../components/Gallery.astro"
+import Testimonials from "../components/Testimonials.astro"
 ---
 
-<Layout title="Blog">
-	<Main>
-		<H1 text="h1"/>
-	</Main>
-</Layout>
-
-
+<MainLayout>
+  <Intro />
+  <Gallery />
+</MainLayout>
